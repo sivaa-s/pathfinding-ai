@@ -1,14 +1,51 @@
-# Graph-Traversal
-Code to traverse a maze in the form of a graph
+# Pathfinding AI 🚀
 
-The program reads its input from a file with the following format. The input begins with
-two positive characters on a line indicating the number of rows r and columns c of the maze, re-
-spectively. The next r lines contain the color and directional information for each arrow in the
-maze. Each line has c values, where each value represents the color of the arrow by the direc-
-tion of the arrow (N, E, S, W, NE, SE, SW, or NW). The color codes R and B represent red and
-blue, respectively, while the direction codes represent north, east, south, west, northeast, south-
-east, southwest, or northwest, respectively. The destination is represented by the letter O.
+An AI-powered pathfinding algorithm to navigate 2D mazes efficiently.
 
-The output will consist of a path from the top left square to the bottom right square (bulls-eye).
-There are multiple mazes to test, along a script that can determine if the
-solution is correct. The script to test the solutions is verifyGraph.py.
+## Features
+- Uses AI to find the shortest path in a 2D maze.
+- Implements algorithms such as A* and Dijkstra.
+- Visualizes the pathfinding process.
+
+## Installation
+```bash
+# Clone the repository
+git clone https://github.com/sivaa-s/pathfinding-ai.git
+cd pathfinding-ai
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+## Usage
+```bash
+python main.py --maze example_maze.txt
+```
+
+## Project Structure
+```
+pathfinding-ai/
+│── src/               # Source code
+│   ├── pathfinder.py  # Pathfinding logic
+│   ├── visualize.py   # Visualization utilities
+│   ├── utils.py       # Helper functions
+│── tests/             # Unit tests
+│── example_maze.txt   # Sample maze file
+│── README.md          # Project documentation
+│── requirements.txt   # Python dependencies
+```
+
+## Example Maze
+```
+S . . . #
+# # . # .
+. . . . G
+```
+Where:
+- `S` is the start point
+- `G` is the goal
+- `#` represents walls
+- `.` represents open paths
+
+## Contributing
+Feel free to fork and contribute! Pull requests are welcome.
